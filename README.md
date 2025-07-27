@@ -21,7 +21,8 @@ And 173 images with actual swimming pools location that we about to use it for a
 start with ideas we saw are and found that 80-90% of city area are covered with red-orange-green-gray color only swimming pool is blue.
 so we decide that we'll create blue mask for morphology loop all picture area.
 
-By Convert the RGB image to the HSV color space because HSV is more robust for color-based segmentation (especially hue).
+By Convert the RGB image to the HSV color space because HSV is more robust for color-based segmentation (especially hue). <ba/>
+
 	hsv_img(:,:,1) = Hue channel (color type)
 	hsv_img(:,:,2) = Saturation channel (color intensity)
 	hsv_img(:,:,3) = Value channel (brightness)
@@ -36,13 +37,19 @@ And we'll have Segmented Image Result. <ba/>
 
 
 Originals Image
+
+
+
 <img width="641" height="643" alt="Screenshot 2568-07-27 at 22 03 43" src="https://github.com/user-attachments/assets/49639e12-6956-43d7-bb91-bc7a5101c842" /><ba/>
+
 
  
 Segmented <ba/>
 
 
+
 <img width="640" height="640" alt="Screenshot 2568-07-27 at 22 03 36" src="https://github.com/user-attachments/assets/e308204b-7bfc-4b3d-b46f-53ff8289f161" /> <ba/>
+
 
 
 after first try image result are not precise enought, we can still spot some fake pool area.
