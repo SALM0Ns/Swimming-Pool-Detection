@@ -10,8 +10,13 @@ we checking dataset files and we founf that we have 289 pool image that capture 
 And 173 images with actual swimming pools location that we about to use it for acuracy test.
 
 
- **Flow Chart**
+ **Flow Chart** <ba/>
+
+ 
 <img width="723" height="563" alt="Image" src="https://github.com/user-attachments/assets/ef2c96e1-e411-4cb6-9369-92c350fbec1a" />
+
+
+
 
 start with ideas we saw are and found that 80-90% of city area are covered with red-orange-green-gray color only swimming pool is blue.
 so we decide that we'll create blue mask for morphology loop all picture area.
