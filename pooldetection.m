@@ -18,7 +18,7 @@ imshow(WaterRe), title('Segmented ');
 hold on;
 
 % Read bounding box from XML
-xmlFile = '/Users/salmonm/Documents/Works/3rd Years/2nd Sems/IMAGE/archive/labels/40.xml';
+xmlFile = '40.xml';
 data = xmlread(xmlFile);
 objects = data.getElementsByTagName('object');
 
