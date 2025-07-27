@@ -31,15 +31,19 @@ And we Define a range in the HSV color space that corresponds to the “blue” 
 	•	Saturation and Value thresholds help exclude pale or dark areas.
 
 Then we create Binary Mask base on thresholds and apply the mask to original image.
-And we'll have Segmented Image Result.
+And we'll have Segmented Image Result. <ba/>
+
 
 
 Originals Image
-<img width="641" height="643" alt="Screenshot 2568-07-27 at 22 03 43" src="https://github.com/user-attachments/assets/49639e12-6956-43d7-bb91-bc7a5101c842" />
+<img width="641" height="643" alt="Screenshot 2568-07-27 at 22 03 43" src="https://github.com/user-attachments/assets/49639e12-6956-43d7-bb91-bc7a5101c842" /><ba/>
 
-Segmented 
+ 
+Segmented <ba/>
 
-<img width="640" height="640" alt="Screenshot 2568-07-27 at 22 03 36" src="https://github.com/user-attachments/assets/e308204b-7bfc-4b3d-b46f-53ff8289f161" />
+
+<img width="640" height="640" alt="Screenshot 2568-07-27 at 22 03 36" src="https://github.com/user-attachments/assets/e308204b-7bfc-4b3d-b46f-53ff8289f161" /> <ba/>
+
 
 after first try image result are not precise enought, we can still spot some fake pool area.
 
@@ -49,18 +53,25 @@ Then we adjust our HSV value
 	•	Hue range (0.5–0.57): Targets a narrower slice of blue hues than before.
 	•	Saturation ≥ 0.3 and Value ≥ 0.5: Filters out dull or dark regions.
 
-Result After HSV Adjustment
+Result After HSV Adjustment <ba/>
 
-<img width="640" height="643" alt="Screenshot 2568-07-27 at 22 11 31" src="https://github.com/user-attachments/assets/82c28d6f-01bd-4ab6-aec5-349de4bee806" />
 
-After we satisfy with our result we add Bounding Boxes on area with that use to be pool or blue area red boxs.
+<img width="640" height="643" alt="Screenshot 2568-07-27 at 22 11 31" src="https://github.com/user-attachments/assets/82c28d6f-01bd-4ab6-aec5-349de4bee806" /><ba/>
 
-<img width="600" height="416" alt="Screenshot 2568-07-27 at 22 04 58" src="https://github.com/user-attachments/assets/9f18bff8-af8e-447d-9b62-a362dddeebc8" />
+
+After we satisfy with our result we add Bounding Boxes on area with that use to be pool or blue area red boxs.<ba/>
+
+
+<img width="600" height="416" alt="Screenshot 2568-07-27 at 22 04 58" src="https://github.com/user-attachments/assets/9f18bff8-af8e-447d-9b62-a362dddeebc8" /><ba/>
+
 
 As we can see Bounding Boxes are cover all of pool spot 
-Then we add XML files that tell us the exactly pool areas and we create Bounding Boxes on it for checking accuracy.
+Then we add XML files that tell us the exactly pool areas and we create Bounding Boxes on it for checking accuracy.<ba/>
 
-<img width="594" height="415" alt="Screenshot 2568-07-27 at 22 04 19" src="https://github.com/user-attachments/assets/7fdb5ec7-04fe-439a-b161-043ceb84b932" />
+
+<img width="594" height="415" alt="Screenshot 2568-07-27 at 22 04 19" src="https://github.com/user-attachments/assets/7fdb5ec7-04fe-439a-b161-043ceb84b932" /><ba/>
+
+After we done all process with all image we found that accuracy of this method is 94.23% depends on image quality.
 
 
 
